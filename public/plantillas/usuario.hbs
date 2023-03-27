@@ -1,0 +1,8 @@
+{{#if user}} 
+    <h3 class="alert alert-success" role="alert">
+        ¡Bienvenido! <a class="alert-link">{{user.nombre}}</a>. Tu direccion es <a class="alert-link">{{user.direccion}}</a>
+        <button class="btn btn-danger float-right" onclick="location.href='/logout-despedida'"><b>SALIR</b></button>
+    </h3>
+{{else}}  
+    <h3 class="alert alert-danger">Usuario no encontrado</h3>
+{{/if}}
